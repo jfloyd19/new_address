@@ -1,0 +1,260 @@
+<html>
+
+  <head>
+    <link rel="stylesheet" href="phone2.css">
+    <title> Address Book </title>
+  </head>
+
+  <body>
+    <div class = "bar" id = "tab_bar" role = "navigation">
+      <button class = "tab" id = "Dialer" accesskey="d">Dialer</button>
+      <button class = "tab" id = "Contact_List" accesskey="l">Contact List</button>
+      <button class = "tab" id = "Add_Contact" accesskey= "a">Add Contact</button>
+      <button class = "tab" id = "Help" accesskey= "h">Help</button>
+    </div>
+
+
+  <div class = "content" id = "content" role = "main" aria-live="polite">
+
+    <div class = "tab_screens" id = "Content_Help">
+       <table style="width:80%">
+         <tr>
+           <th align = "left">Acessibility Feature:</th>
+           <th align = "left">Description:</th>
+         </tr>
+         <tr>
+           <td>Tab Control</td>
+           <td>Every button in user interface is accessible via the tab key in a reasonable order</td>
+         </tr>
+         <tr>
+           <td>Keyboard Shortcuts</td>
+           <td>All dialer input and tabs are accessbile by the keyboard shortcuts listed in the below table (may require shift + alt + key or control + option + key)</td>
+         </tr>
+         <tr>
+           <td>Contact List Table</td>
+           <td>Instead of just a list with contact names, the contact list has been formatted into a table for screen readers to easily navigate</td>
+         </tr>
+         <tr>
+           <td>Images with captions and long descriptions</td>
+           <td>Pictures have captions and descriptions for screenreaders</td>
+         </tr>
+         <tr>
+           <td>Aria Landmark Roles</td>
+           <td>Lets assistive technology know how to navigate through an app</td>
+         </tr>
+         <tr>
+           <td>Aria Live on Tab Content</td>
+           <td>Tab content is identified as live region, which will alert the user that content is often updated and allows a screenreader to understand</td>
+         </tr>
+      </table>
+
+      <table style = "width:33%">
+        <tr>
+          <th align = "left">Keyboard Shortcut:</th>
+          <th align = "left">Key:</th>
+        </tr>
+        <tr>
+          <td>Dialer Tab</td>
+          <td>d</td>
+        </tr>
+        <tr>
+          <td>Contact List Tab</td>
+          <td>l</td>
+        </tr>
+        <tr>
+          <td>Add Contact Tab</td>
+          <td>a</td>
+        </tr>
+        <tr>
+          <td>Help Tab</td>
+          <td>h</td>
+        </tr>
+        <tr>
+          <td>Dialer Numbers</td>
+          <td>Specific Number</td>
+        </tr>
+        <tr>
+          <td>Dialer *</td>
+          <td>s</td>
+        </tr>
+        <tr>
+          <td>Dialer Clear</td>
+          <td>c</td>
+        </tr>
+        <tr>
+          <td>Dialer #</td>
+          <td>p</td>
+        </tr>
+      </table>
+
+      <table style="width:100%">
+        <tr>
+          <th align = "left">Image:</th>
+          <th align = "left">Source: </th>
+        </tr>
+        <tr>
+          <td>Michael:</td>
+          <td>https://www.google.com/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&ved=2ahUKEwj-6Pz_h7LgAhVHllQKHfQaBS4QjRx6BAgBEAU&url=https%3A%2F%2Fmtncatholic.com%2F2016%2F10%2F06%2Fno-joke-dante-puts-michael-scott-hell%2F&psig=AOvVaw0mM6tBIcHZ_pNzeN70BRUM&ust=1549918903624492</td>
+        </tr>
+        <tr>
+          <td>Dwight:</td>
+          <td>https://twitter.com/dwightschrute_</td>
+        </tr>
+        <tr>
+          <td>Pam:</td>
+          <td>http://www.fanpop.com/clubs/pam-beesly/images/370035/title/pam-beasley-photo</td>
+        </tr>
+        <tr>
+          <td>Jim:</td>
+          <td>https://twitter.com/jimhalpert__</td>
+        </tr>
+        <tr>
+          <td>Oscar:</td>
+          <td>https://www.nbc.com/the-office/credits/character/oscar-martinez</td>
+        </tr>
+        <tr>
+          <td>Toby:</td>
+          <td>http://www.jewornotjew.com/profile.jsp?ID=528</td>
+        </tr>
+      <tr>
+        <td>Kelly:</td>
+        <td>https://en.wikipedia.org/wiki/Kelly_Kapoor</td>
+      </tr>
+      <tr>
+        <td>Creed:</td>
+        <td>https://www.altpress.com/news/creed_bratton_the_office_reboot_storyline/</td>
+      </tr>
+    </table>
+    </div>
+    <div class = "tab_screens" id = "Content_Dialer">
+      <h1> Dialer </h1>
+      <form>
+        <label for="name"></label>
+        <input class = "text" id ="dialer_input">
+      </form>
+      <div id="dialer_pad">
+      <div id = "first_row">
+      <button class = "dial_number" id = "one" accesskey="1">1</button>
+      <button class = "dial_number" id = "two" accesskey="2">2</button>
+      <button class = "dial_number" id = "three" accesskey="3">3</button>
+      </div>
+      <div id = "second_row">
+      <button class = "dial_number" id = "four" accesskey="4">4</button>
+      <button class = "dial_number" id = "five" accesskey="5">5</button>
+      <button class = "dial_number" id = "six" accesskey="6">6</button>
+      </div>
+      <div id = "third_row">
+      <button class = "dial_number" id = "seven" accesskey="7">7</button>
+      <button class = "dial_number" id = "eight" accesskey="8">8</button>
+      <button class = "dial_number" id = "nine" accesskey="9">9</button>
+      </div>
+      <div id = "fourth_row">
+      <button class = "dial_number" id = "asterik" accesskey="s" >*</button>
+      <button class = "dial_number" id = "zero" accesskey="0">0</button>
+      <button class = "dial_number" id = "hashtag" accesskey="p" >#</button>
+      </div>
+    </div>
+      <div id = "fifth_row">
+      <button class = "dial_buttons" id = "Dial">Dial</button>
+      <button class = "dial_buttons" id = "Clear" accesskey="c">Clear</button>
+      </div>
+    </div>
+
+  <div class = "tab_screens" id = "Content_Contact_List">
+    <h1> Contact List </h1>
+
+ <table style="width:100%">
+   <tr>
+    <th align = "left">Photo:</th>
+     <th align = "left">First Name:</th>
+     <th align = "left">Last Name:</th>
+     <th align = "left">Phone Number:</th>
+     <th align = "left">Email:</th>
+   </tr>
+   <tr>
+     <td><img src="prison_mike.png" alt="Michael Scott's Face"  longdesc="Picture of Michael Scott's Face wearing a bandana with black suit on"border=3 height=100 width=100></img></td>
+     <td>Michael</td>
+     <td>Scott</td>
+     <td>111-111-1111</td>
+     <td>michael.scott@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="dwight.jpeg" alt="Dwight Schrute's Face" longdesc="Dwight Schrute staring at camera with discontent, wearing a mustard dress shirt"border=3 height=100 width=100></img></td>
+     <td>Dwight</td>
+     <td>Schrute</td>
+     <td>222-222-2222</td>
+     <td>dwight.schrute@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="pam.jpg" alt="Pam Beesly's Face" longdesc="Pam Beesly looking upset at camera wearing blue sweater"border=3 height=100 width=100></img></td>
+     <td>Pam</td>
+     <td>Beesly</td>
+     <td>333-333-3333</td>
+     <td>pam.beasily@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="jim.jpeg" alt="Jim Halpert's Face" longdesc="Jim Halpert smiling at camera wearing a white dress shirt" border=3 height=100 width=100></img></td>
+     <td>Jim</td>
+     <td>Halpert</td>
+     <td>444-444-4444</td>
+     <td>jim.halpert@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="oscar.jpg" alt="Oscar Martinez's Face" longdesc="Oscar Martinez looking annoyed wearing a white dress shirt" border=3 height=100 width=100></img></td>
+     <td>Oscar</td>
+     <td>Martinez</td>
+     <td>555-555-5555</td>
+     <td>oscar.martinez@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="toby.jpg" alt="Toby Flenderson's Face" longdesc="Toby Flenderson looking typically dull with white dress shirt and black sport coat on"border=3 height=100 width=100></img></td>
+     <td>Toby</td>
+     <td>Flenderson</td>
+     <td>666-666-6666</td>
+     <td>toby.flenderson@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="kelly.jpg" alt="Kelly Kapoor's Face" longdesc="Kelly Kapoor smiling at the camera wearing a blue shirt"border=3 height=100 width=100></img></td>
+     <td>Kelly</td>
+     <td>Kapoor</td>
+     <td>777-777-7777</td>
+     <td>kelly.kapore@dundermifflin.com</td>
+   </tr>
+   <tr>
+     <td><img src="creed.jpg" alt="Creed Bratton's Face" longdesc="Creed Bratton looking cute and surprised at the camera with a suit on"border=3 height=100 width=100></img></td>
+     <td>Creed</td>
+     <td>Bratton</td>
+     <td>888-888-8888</td>
+     <td>creed.braton@dundermifflin.com</td>
+   </tr>
+ </table>
+
+  </div>
+
+  <div class = "tab_screens" id = "Content_Add_Contact">
+      <h1> Add Contact </h1>
+      <form>
+      <h4> Name </h4>
+      <input class = "text" id="name" placeholder="Angela Martin">
+      </form>
+      <form>
+      <h4> Phone Number </h4>
+      <input class = "text" id="number" placeholder="555-555-5555">
+      </form>
+      <form>
+      <h4> Email Address </h4>
+      <input class = "text" id="email" placeholder="kevin_malone@gmail.com">
+      </form>
+      <button class = "contact_button" id = "add_contact">Add Contact</button>
+      <button class = "contact_button" id = "Clear">Clear</button>
+
+  </div>
+
+  </div>
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="phone2.js"></script>
+  </body>
+</html>
